@@ -28,144 +28,47 @@ public class posiv {
       page.getByLabel("Close").click();
 
 
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Customers").setExact(true)).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Reported Customers")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Advertisement")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Posts")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Reported Content")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Report Reasons")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Directory Services")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Story Stickers")).click();
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Directory Services")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Joining Waitlist")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Survey Records")).click();
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Survey Records")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Earnings")).click();
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).click();
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Manage Subadmin")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Send Notification")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("FAQ")).click();
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).click();
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("About Us")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("About Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("About Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("About Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("About Us")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("About Us")).press("ArrowDown");
-    //   page.getByText("DashboardCustomersReported").click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).click();
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Privacy Policy")).click();
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).click();
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Terms & Condition")).click();
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Terms & Condition")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Terms & Condition")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Terms & Condition")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).click();
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).press("ArrowDown");
-    //   page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Why Posiv")).click();
-    //   page.locator("#headlessui-menu-button-1").click();
-    //   page.getByRole(AriaRole.MENUITEM, new Page.GetByRoleOptions().setName("Log Out")).click();
-    //   page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Yes, Log Me Out!")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Customers").setExact(true)).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Reported Customers")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Advertisement")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Posts")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Reported Content")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Report Reasons")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Document Verification")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Directory Services")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Story Stickers")).click();
+     
+      
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Leader Board")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Joining Waitlist")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Survey Records")).click();
+    
+      page.getByText("DashboardCustomersReported").click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Survey Records")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Earnings")).click();
+      
+     
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Manage Subadmin")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Send Notification")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).click();
+      
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("FAQ")).click();
+      page.getByText("DashboardCustomersReported").click();
+      
+      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CMS")).click();
+      
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("About Us")).click();
+      //page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("About Us")).press("ArrowDown");
+      
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Privacy Policy")).click();
+   
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Terms & Condition")).click();
+      
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Why Posiv")).click();
+      
+      page.locator("#headlessui-menu-button-1").click();
+      page.getByRole(AriaRole.MENUITEM, new Page.GetByRoleOptions().setName("Log Out")).click();
+      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Yes, Log Me Out!")).click();
 
             
 
