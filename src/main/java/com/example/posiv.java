@@ -14,7 +14,7 @@ public class posiv {
             page.navigate("https://admin.posiv.org.uk/#");
 
             page.getByPlaceholder("Enter Email").fill("admin@posiv.com");
-            page.getByPlaceholder("Enter Password").fill("Admin@111");
+            page.getByPlaceholder("Enter Password").fill("Admin@121");
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click(); 
 
 
@@ -65,7 +65,7 @@ public class posiv {
       page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Terms & Condition")).click();
       
       page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Why Posiv")).click();
-      
+
       page.locator("#headlessui-menu-button-1").click();
       page.getByRole(AriaRole.MENUITEM, new Page.GetByRoleOptions().setName("Log Out")).click();
       page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Yes, Log Me Out!")).click();
