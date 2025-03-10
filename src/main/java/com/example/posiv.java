@@ -14,7 +14,7 @@ public class posiv {
             page.navigate("https://admin.posiv.org.uk/#");
 
             page.getByPlaceholder("Enter Email").fill("admin@posiv.com");
-            page.getByPlaceholder("Enter Password").fill("Admin@121");
+            page.getByPlaceholder("Enter Password").fill("Admin@111");
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click(); 
 
 
@@ -81,6 +81,12 @@ public class posiv {
 
             playwright.close();
             browser.close();
+
+            try {
+                
+            } catch (Exception e) {
+                // TODO: handle exception
+            }
 
         }
 
