@@ -13,6 +13,12 @@
       <artifactId>playwright</artifactId>
       <version>1.42.0</version>
     </dependency>
+  
+    <dependency>
+      <groupId>one.ifelse.tools</groupId>
+      <artifactId>user-agents</artifactId>
+      <version>0.0.1</version>
+    </dependency>
   </dependencies>
 </project>
 
