@@ -5,7 +5,7 @@ import com.microsoft.playwright.options.AriaRole;
 
 public class profile {
 
-    public void edit_profile(Page page) {
+    public void profile(Page page) {
 
         try {
         

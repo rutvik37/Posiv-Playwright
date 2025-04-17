@@ -21,13 +21,14 @@ public class posiv {
 
             Thread.sleep(2000); // Wait for login
 
-            // Dashboard
-            dashboard dash = new dashboard();
-            dash.dashboard(page);
+            dashboard dashboard = new dashboard();
+            dashboard.dashboard(page);
 
-            // Edit Profile
-            edit_profile profile = new edit_profile();
-            profile.edit_profile(page);
+            profile profile = new profile();
+            profile.profile(page);
+            
+            notification notification = new notification();
+            notification.notification(page);
 
         } catch (Exception e) {
             e.printStackTrace();
