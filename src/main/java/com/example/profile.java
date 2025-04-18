@@ -51,11 +51,14 @@ public class profile {
             page.locator("#headlessui-menu-button-1").click();
             page.getByRole(AriaRole.MENUITEM, new Page.GetByRoleOptions().setName("Log Out")).click();
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Yes, Log Me Out!")).click(); // logout functionality
+            System.out.println("Log-out functionality");
 
             page.getByPlaceholder("Enter Email").fill("admin@posiv.com");
             page.getByPlaceholder("Enter Password").fill("Admin@111");
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click(); // login again
             page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Dashboard")).click(); // dashboard
+
+            System.out.println("✅  Profile");
 
 
         } catch (Exception e) {

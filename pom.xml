@@ -9,16 +9,21 @@
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
-      <groupId>com.microsoft.playwright</groupId>
-      <artifactId>playwright</artifactId>
-      <version>1.42.0</version>
-    </dependency>
+  <groupId>com.microsoft.playwright</groupId>
+  <artifactId>playwright</artifactId>
+  <version>1.44.0</version> <!-- or latest -->
+</dependency>
+
   
     <dependency>
       <groupId>one.ifelse.tools</groupId>
       <artifactId>user-agents</artifactId>
       <version>0.0.1</version>
     </dependency>
+
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-text</artifactId>
+    <version>1.10.0</version> 
   </dependencies>
 </project>
 
