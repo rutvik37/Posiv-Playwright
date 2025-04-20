@@ -8,6 +8,8 @@
   <name>hbl1</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+
+  
     <dependency>
   <groupId>com.microsoft.playwright</groupId>
   <artifactId>playwright</artifactId>
