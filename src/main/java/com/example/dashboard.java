@@ -8,7 +8,6 @@ public class dashboard {
     public void dashboard(Page page) {
         try {
 
-            
             page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Dashboard")).click();
             page.getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("Total Customers")).click();
             Thread.sleep(1000);

@@ -4,6 +4,7 @@ import java.util.Random;
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.AriaRole;
 
+
 public class posiv {
 
     public static void main(String[] args) {
@@ -16,11 +17,24 @@ public class posiv {
         SharedData.description = generateRandomAlphaString(10, 20);
         SharedData.email = generateRandomEmail();
 
+        SharedData.name = generateRandomAlphaString(4, 6);
+        SharedData.phone = String.valueOf(1000000000L + (long)(Math.random() * 9000000000L));
+        SharedData.email2 = generateRandomEmail();
+        SharedData.message2 = generateRandomAlphaString(6, 9);
+
+        SharedData.name2 = generateRandomAlphaString(4, 6);
+        SharedData.phone2 = String.valueOf(1000000000L + (long)(Math.random() * 9000000000L));
+        SharedData.email3 = generateRandomEmail();
+        SharedData.message3 = generateRandomAlphaString(6, 9);
+
+
+
         try (Playwright playwright = Playwright.create()) {
 
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
             BrowserContext context = browser.newContext();
             Page page = context.newPage();
+            
 
             page.navigate("https://admin.posiv.org.uk/#");
 
@@ -28,7 +42,7 @@ public class posiv {
             page.getByPlaceholder("Enter Password").fill("Admin@111");
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click();
 
-            Thread.sleep(2000); // Wait for login
+            Thread.sleep(2000);
 
             dashboard dashboard = new dashboard();
             dashboard.dashboard(page);
@@ -42,7 +56,10 @@ public class posiv {
             contact_us contact_us = new contact_us();
             contact_us.contact_us(page);
 
-           
+            join_waitlist join_waitlist = new join_waitlist();
+            join_waitlist.join_waitlist(page);
+
+            
 
         } catch (Exception e) {
             e.printStackTrace();

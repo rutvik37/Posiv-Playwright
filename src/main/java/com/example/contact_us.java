@@ -16,7 +16,6 @@ public class contact_us {
       Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
       BrowserContext context = browser.newContext();
       
-      // Fill Contact Us form on main website
       page.navigate("https://posiv.org.uk/");
       page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Contact Us")).click();
 
@@ -26,12 +25,9 @@ public class contact_us {
       page.getByPlaceholder("Enter the subject").fill(subject);
       page.getByLabel("Description").fill(description);
       page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Submit")).click();
-
       System.out.println("contact us details sent from website");
-
       Thread.sleep(2000);
 
-      // Login to admin panel
       Page page2 = context.newPage();
       page2.navigate("https://admin.posiv.org.uk/#");
       page2.getByPlaceholder("Enter Email").fill("admin@posiv.com");
@@ -43,8 +39,6 @@ public class contact_us {
       page2.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Contact Us")).click(); // redirects to contact us page
       Thread.sleep(3000);
 
-      // searching details by page wise 
-
       int page3Num = 1;
       boolean found = false;
 
@@ -52,15 +46,13 @@ public class contact_us {
         page2.waitForLoadState();
         String visibleText = page2.locator("body").first().innerText();  // Use page2 here
 
-        System.out.println("🔍 Scanning page3 " + page3Num);
-
-        if (visibleText.contains(firstname) &&
+            if (visibleText.contains(firstname) &&
             visibleText.contains(lastname) &&
             visibleText.contains(email) &&
             visibleText.contains(subject) &&
             visibleText.contains(description)) {
 
-          System.out.println("✅ Contact Us functionality is working fine."); // verify contact us details in admin which comes from website 
+          System.out.println("✅ Contact Us"); // verify contact us details in admin which comes from website 
           found = true;
           break;
         }
@@ -77,7 +69,7 @@ public class contact_us {
             break;
           }
         } catch (Exception e) {
-          System.out.println("⚠️ Pagination failed: " + e.getMessage());
+
           break;
         }
       }

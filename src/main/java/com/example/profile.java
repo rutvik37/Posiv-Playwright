@@ -11,7 +11,7 @@ public class profile {
         
             page.locator("#headlessui-menu-button-1").click();
             page.getByRole(AriaRole.MENUITEM, new Page.GetByRoleOptions().setName("Edit Profile")).click();
-            page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Save changes")).click(); // Profile Updated
+            page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Save changes")).click(); 
             System.out.println("Profile updated");
 
 
