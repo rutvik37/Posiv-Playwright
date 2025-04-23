@@ -1,3 +1,6 @@
+// main - file 
+// contains all modules - dashboard, profile, notification, contact us, join waitlist, survey records ...
+
 package com.example;
 
 import java.util.Random;
@@ -5,9 +8,9 @@ import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.AriaRole;
 
 
-public class posiv {
+public class posiv { // main - posiv class
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {  
 
         SharedData.title = generateRandomAlphaString(6, 9);
         SharedData.message = generateRandomAlphaString(6, 9);
@@ -27,7 +30,8 @@ public class posiv {
         SharedData.email3 = generateRandomEmail();
         SharedData.message3 = generateRandomAlphaString(6, 9);
 
-
+        SharedData.email4 = generateRandomEmail();
+        SharedData.email5 = generateRandomEmail();
 
         try (Playwright playwright = Playwright.create()) {
 
@@ -40,7 +44,7 @@ public class posiv {
 
             page.getByPlaceholder("Enter Email").fill("admin@posiv.com");
             page.getByPlaceholder("Enter Password").fill("Admin@111");
-            page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click();
+            page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click();  // login admin panel 
 
             Thread.sleep(2000);
 
@@ -59,14 +63,18 @@ public class posiv {
             join_waitlist join_waitlist = new join_waitlist();
             join_waitlist.join_waitlist(page);
 
-            
+            survey_records survey_records = new survey_records();
+            survey_records.survey_records(page);
+
+            // test test = new test();
+            // test.test(page);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public static String generateRandomAlphaString(int minLen, int maxLen) {
+    public static String generateRandomAlphaString(int minLen, int maxLen) {   // generate random valid string function 
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         Random random = new Random();
         int length = random.nextInt(maxLen - minLen + 1) + minLen;
@@ -78,10 +86,11 @@ public class posiv {
         return sb.toString();
     }
 
-    public static String generateRandomEmail() {
+    public static String generateRandomEmail() {  // generate random valid email function
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         String digits = "0123456789";
         Random random = new Random();
+
 
         int nameLength = random.nextInt(5) + 5;
         int domainLength = random.nextInt(5) + 3;

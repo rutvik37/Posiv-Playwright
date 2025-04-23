@@ -58,7 +58,7 @@ public class profile {
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click(); // login again
             page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Dashboard")).click(); // dashboard
 
-            System.out.println("✅  Profile");
+            System.out.println("✅ 2 . Profile");
 
 
         } catch (Exception e) {

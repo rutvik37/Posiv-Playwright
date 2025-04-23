@@ -79,7 +79,7 @@ public class join_waitlist {
                   visibleText.contains(message2)
             ) {
       
-                System.out.println("✅ Join waitlist ( Supporters ) functionality is working fine."); // verify details in admin which comes from website 
+                System.out.println("Join waitlist ( Supporters ) details Found"); // verify details in admin which comes from website 
                 found = true;
                 break;
               }
@@ -126,7 +126,7 @@ public class join_waitlist {
                       visibleText.contains(message3)
                 ) {
           
-                    System.out.println("✅ Join waitlist ( Directories ) functionality is working fine."); // verify details in admin which comes from website 
+                    System.out.println("Join waitlist ( Directories ) details Not Found"); // verify details in admin which comes from website 
                     found1 = true;
                     break;
                   }
@@ -153,6 +153,12 @@ public class join_waitlist {
                 if (!found1) {
                   System.out.println("❌ Join waitlist ( Directories ) functionality may be broken.");
                 } 
+
+                if (found && found1) {
+                  System.out.println("✅ 5 . Join waitlist");
+                }
+
+
      }
     
 }

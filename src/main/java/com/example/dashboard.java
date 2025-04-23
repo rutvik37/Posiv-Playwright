@@ -29,7 +29,7 @@ public class dashboard {
             Thread.sleep(1000);
             page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Dashboard")).click();
 
-            System.out.println("✅  Dashboard");
+            System.out.println("✅ 1 . Dashboard");
 
         } catch (Exception e) {
             e.printStackTrace();

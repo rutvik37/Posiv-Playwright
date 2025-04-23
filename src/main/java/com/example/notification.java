@@ -29,7 +29,7 @@ public class notification {
         Thread.sleep(1000);
 
         if (page.content().contains(title) && page.content().contains(message)) {
-            System.out.println("✅ 'Notification'");
+            System.out.println("✅ 3 . Notification");
         } else {
             System.out.println("❌ 'Notification' Functionality may be broken.");
         }
