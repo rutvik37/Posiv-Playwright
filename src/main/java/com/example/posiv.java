@@ -49,22 +49,22 @@ public class posiv { // main - posiv class
             Thread.sleep(2000);
 
             dashboard dashboard = new dashboard();
-            dashboard.dashboard(page);
+            dashboard.dashboard(page); // 1
 
             profile profile = new profile();
-            profile.profile(page);
+            profile.profile(page); // 2
 
             notification notification = new notification();
-            notification.notification(page);
+            notification.notification(page); // 3
 
             contact_us contact_us = new contact_us();
-            contact_us.contact_us(page);
+            contact_us.contact_us(page); // 4
 
             join_waitlist join_waitlist = new join_waitlist();
-            join_waitlist.join_waitlist(page);
+            join_waitlist.join_waitlist();  // 5
 
             survey_records survey_records = new survey_records();
-            survey_records.survey_records(page);
+            survey_records.survey_records(page); // 6
 
             // test test = new test();
             // test.test(page);
