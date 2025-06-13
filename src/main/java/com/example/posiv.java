@@ -46,25 +46,27 @@ public class posiv { // main - posiv class
             page.getByPlaceholder("Enter Password").fill("Admin@111");
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click();  // login admin panel 
 
+            System.out.println("DONE");
+
             Thread.sleep(2000);
 
-            dashboard dashboard = new dashboard();
-            dashboard.dashboard(page); // 1
+            // dashboard dashboard = new dashboard();
+            // dashboard.dashboard(page); // 1
 
-            profile profile = new profile();
-            profile.profile(page); // 2
+            // profile profile = new profile();
+            // profile.profile(page); // 2
 
-            notification notification = new notification();
-            notification.notification(page); // 3
+            // notification notification = new notification();
+            // notification.notification(page); // 3
 
-            contact_us contact_us = new contact_us();
-            contact_us.contact_us(page); // 4
+            // contact_us contact_us = new contact_us();
+            // contact_us.contact_us(page); // 4
 
-            join_waitlist join_waitlist = new join_waitlist();
-            join_waitlist.join_waitlist();  // 5
+            // join_waitlist join_waitlist = new join_waitlist();
+            // join_waitlist.join_waitlist();  // 5
 
-            survey_records survey_records = new survey_records();
-            survey_records.survey_records(page); // 6
+            // survey_records survey_records = new survey_records();
+            // survey_records.survey_records(page); // 6
 
             // test test = new test();
             // test.test(page);
