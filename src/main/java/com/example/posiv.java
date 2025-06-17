@@ -1,7 +1,7 @@
 // main - file 
 // contains all modules - dashboard, profile, notification, contact us, join waitlist, survey records ...
 
-// Testing purpose 2 
+// headless mode :- True
 
 package com.example;
 
@@ -37,7 +37,7 @@ public class posiv { // main - posiv class
 
         try (Playwright playwright = Playwright.create()) {
 
-            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
             BrowserContext context = browser.newContext();
             Page page = context.newPage();
             
