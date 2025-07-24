@@ -28,7 +28,7 @@ public class join_waitlist {
 
       // ======= Step 1: Fill Supporters Form ========
       page.navigate("https://posiv.org.uk/");
-      Thread.sleep(3000); // fixed wait
+      Thread.sleep(3000);
 
       page.locator("section").filter(new Locator.FilterOptions().setHasText("Transform Your Mind,")).getByRole(AriaRole.BUTTON).click();
       page.getByPlaceholder("Enter your name").fill(name);

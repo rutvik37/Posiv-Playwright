@@ -10,7 +10,7 @@ import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.AriaRole;
 
 
-public class posiv { // main - posiv class
+public class posiv { 
 
     public static void main(String[] args) {  
 
@@ -37,7 +37,8 @@ public class posiv { // main - posiv class
 
         try (Playwright playwright = Playwright.create()) {
 
-            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
+            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+
             BrowserContext context = browser.newContext();
             Page page = context.newPage();
             
@@ -48,7 +49,26 @@ public class posiv { // main - posiv class
             page.getByPlaceholder("Enter Password").fill("Admin@111");
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click();  // login admin panel 
 
-            System.out.println("DONE");
+ page.waitForTimeout(2000);
+
+//  browser.close();
+// //  playwright.close();
+ 
+Locator errorToast = page.locator("h2.swal2-title");
+            if (errorToast.isVisible()) {
+                String errorText = errorToast.innerText();
+                if (errorText.contains("valid password") || errorText.contains("Invalid credentials")) {
+                    System.out.println("❌ Please re-verify credentials: " + errorText);
+                    return; 
+                }
+            }
+Locator successToast = page.locator("h2.swal2-title");
+
+if (!successToast.isVisible() || !successToast.innerText().contains("Login successful")) {
+    System.out.println("❌ Login failed or no success message.");
+    return; // stop further test
+}
+          System.out.println("Login DONE");
 
             Thread.sleep(2000);
 
@@ -90,7 +110,7 @@ public class posiv { // main - posiv class
         return sb.toString();
     }
 
-    public static String generateRandomEmail() {  // generate random valid email function
+    public static String generateRandomEmail() { 
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         String digits = "0123456789";
         Random random = new Random();

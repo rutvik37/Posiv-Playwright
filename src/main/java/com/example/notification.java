@@ -16,7 +16,7 @@ public class notification {
 
         page.locator("ng-select").getByRole(AriaRole.TEXTBOX).click();
 
-        page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("Rutvik Jasani - Supporter")).first().click();
+        page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("John Wilson - Supporter")).first().click();
 
         page.getByPlaceholder("Enter title").fill(title);
         page.getByPlaceholder("Enter message").fill(message);
