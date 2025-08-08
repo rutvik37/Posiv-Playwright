@@ -6,11 +6,13 @@ import com.microsoft.playwright.options.*;
 public class contact_us {
 
   public void contact_us(Page page) throws InterruptedException {
-    String firstname = SharedData.firstname;
-    String lastname = SharedData.lastname;
-    String subject = SharedData.subject;
-    String description = SharedData.description;
-    String email = SharedData.email;
+
+        String firstname = posiv.generateRandomAlphaString(4, 5);
+        String lastname = posiv.generateRandomAlphaString(4, 5);
+        String subject = posiv.generateRandomAlphaString(6, 9);
+        String description = posiv.generateRandomAlphaString(10, 20);
+        String email = posiv.generateRandomEmail();
+   
 
     try (Playwright playwright = Playwright.create()) {
       Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));

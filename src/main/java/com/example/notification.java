@@ -7,8 +7,11 @@ public class notification {
 
     public void notification(Page page) throws InterruptedException {
 
-        String title = SharedData.title;
-        String message = SharedData.message;
+        // String title = SharedData.title;
+        // String message = SharedData.message;
+
+            String title = posiv.generateRandomAlphaString(5, 8);
+            String message = posiv.generateRandomAlphaString(5, 8);
 
         page.navigate("https://admin.posiv.org.uk/#/admin/send_notification");
 

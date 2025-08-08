@@ -15,16 +15,15 @@ public class join_waitlist {
       BrowserContext context = browser.newContext();
       Page page = context.newPage();
 
-      // Data from SharedData
-      String name = SharedData.name;
-      String email2 = SharedData.email2;
-      String phone = SharedData.phone;
-      String message2 = SharedData.message2;
+       String name = posiv.generateRandomAlphaString(4, 6);
+        String phone = String.valueOf(1000000000L + (long)(Math.random() * 9000000000L));
+        String email2 = posiv.generateRandomEmail();
+        String message2 = posiv.generateRandomAlphaString(6, 9);
 
-      String name2 = SharedData.name;
-      String email3 = SharedData.email3;
-      String phone2 = SharedData.phone2;
-      String message3 = SharedData.message3;
+        String name2 = posiv.generateRandomAlphaString(4, 6);
+        String phone2 = String.valueOf(1000000000L + (long)(Math.random() * 9000000000L));
+        String email3 = posiv.generateRandomEmail();
+        String message3 = posiv.generateRandomAlphaString(6, 9);
 
       // ======= Step 1: Fill Supporters Form ========
       page.navigate("https://posiv.org.uk/");

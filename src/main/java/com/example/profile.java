@@ -18,7 +18,7 @@ public class profile {
             page.locator("#headlessui-menu-button-1").click();
             page.getByRole(AriaRole.MENUITEM, new Page.GetByRoleOptions().setName("Change Password")).click();
             
-            page.getByPlaceholder("Enter old password").fill("Admin@111");
+            page.getByPlaceholder("Enter old password").fill("Admin@111"); 
             
             page.getByPlaceholder("Enter new password").fill("Admin@111");
             page.getByPlaceholder("Enter confirm password").fill("Admin@111");

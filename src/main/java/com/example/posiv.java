@@ -14,27 +14,6 @@ public class posiv {
 
     public static void main(String[] args) {  
 
-        SharedData.title = generateRandomAlphaString(6, 9);
-        SharedData.message = generateRandomAlphaString(6, 9);
-        SharedData.firstname = generateRandomAlphaString(4, 5);
-        SharedData.lastname = generateRandomAlphaString(4, 5);
-        SharedData.subject = generateRandomAlphaString(6, 9);
-        SharedData.description = generateRandomAlphaString(10, 20);
-        SharedData.email = generateRandomEmail();
-
-        SharedData.name = generateRandomAlphaString(4, 6);
-        SharedData.phone = String.valueOf(1000000000L + (long)(Math.random() * 9000000000L));
-        SharedData.email2 = generateRandomEmail();
-        SharedData.message2 = generateRandomAlphaString(6, 9);
-
-        SharedData.name2 = generateRandomAlphaString(4, 6);
-        SharedData.phone2 = String.valueOf(1000000000L + (long)(Math.random() * 9000000000L));
-        SharedData.email3 = generateRandomEmail();
-        SharedData.message3 = generateRandomAlphaString(6, 9);
-
-        SharedData.email4 = generateRandomEmail();
-        SharedData.email5 = generateRandomEmail();
-
         try (Playwright playwright = Playwright.create()) {
 
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
@@ -43,55 +22,52 @@ public class posiv {
             Page page = context.newPage();
             
 
-            page.navigate("https://admin.posiv.org.uk/#");
+//             page.navigate("https://admin.posiv.org.uk/#");
 
-            page.getByPlaceholder("Enter Email").fill("admin@posiv.com");
-            page.getByPlaceholder("Enter Password").fill("Admin@111");
-            page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click();  // login admin panel 
+//             page.getByPlaceholder("Enter Email").fill("admin@posiv.com");
+//             page.getByPlaceholder("Enter Password").fill("Admin@111");
+//             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click();  // login admin panel 
 
- page.waitForTimeout(2000);
-
-//  browser.close();
-// //  playwright.close();
+//  page.waitForTimeout(2000);
  
-Locator errorToast = page.locator("h2.swal2-title");
-            if (errorToast.isVisible()) {
-                String errorText = errorToast.innerText();
-                if (errorText.contains("valid password") || errorText.contains("Invalid credentials")) {
-                    System.out.println("❌ Please re-verify credentials: " + errorText);
-                    return; 
-                }
-            }
-Locator successToast = page.locator("h2.swal2-title");
+// Locator errorToast = page.locator("h2.swal2-title");
+//             if (errorToast.isVisible()) {
+//                 String errorText = errorToast.innerText();
+//                 if (errorText.contains("valid password") || errorText.contains("Invalid credentials")) {
+//                     System.out.println("❌ Please re-verify credentials: " + errorText);
+//                     return; 
+//                 }
+//             }
+// Locator successToast = page.locator("h2.swal2-title");
 
-if (!successToast.isVisible() || !successToast.innerText().contains("Login successful")) {
-    System.out.println("❌ Login failed or no success message.");
-    return; // stop further test
-}
-          System.out.println("Login DONE");
+// if (!successToast.isVisible() || !successToast.innerText().contains("Login successful")) {
+//     System.out.println("❌ Login failed or no success message.");
+//     return; // stop further test
+// }
+//           System.out.println("Login DONE");
 
-            Thread.sleep(2000);
+//             Thread.sleep(2000);
 
-            // dashboard dashboard = new dashboard();
-            // dashboard.dashboard(page); // 1
+//             dashboard dashboard = new dashboard();
+//             dashboard.dashboard(page); // 1
 
-            // profile profile = new profile();
-            // profile.profile(page); // 2
+//             profile profile = new profile();
+//             profile.profile(page); // 2
 
-            // notification notification = new notification();
-            // notification.notification(page); // 3
+//             notification notification = new notification();
+//             notification.notification(page); // 3
 
-            // contact_us contact_us = new contact_us();
-            // contact_us.contact_us(page); // 4
+//             contact_us contact_us = new contact_us();
+//             contact_us.contact_us(page); // 4
 
-            // join_waitlist join_waitlist = new join_waitlist();
-            // join_waitlist.join_waitlist();  // 5
+//             join_waitlist join_waitlist = new join_waitlist();
+//             join_waitlist.join_waitlist();  // 5
 
-            // survey_records survey_records = new survey_records();
-            // survey_records.survey_records(page); // 6
+//             survey_records survey_records = new survey_records();
+//             survey_records.survey_records(page); // 6
 
-            // test test = new test();
-            // test.test(page);
+            test test = new test();
+            test.test(page); // 7
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -136,5 +112,4 @@ if (!successToast.isVisible() || !successToast.innerText().contains("Login succe
 
         return namePart.toString() + "@" + domainPart.toString() + "." + tld;
     }
-
 }

@@ -12,9 +12,8 @@ public class survey_records
 
 public void survey_records ( Page page) throws InterruptedException {
 
-
-    String email4 = SharedData.email4;
-    String email5 = SharedData.email5;
+        String email4 = posiv.generateRandomEmail();
+        String email5 = posiv.generateRandomEmail();
 
       page.navigate("https://posiv.org.uk/");
 
